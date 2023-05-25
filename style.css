@@ -9,3 +9,63 @@ body {
 h1 {
 	text-align: center;
 }
+
+/********/
+
+
+
+.osoba {
+	border: 1px solid lightgray;
+	border-radius: 3%;
+	padding: 15px;
+	gap: 2em;
+	box-shadow: 3px 1px 1px rgb(220, 215, 215);
+	text-align: center;
+	column-gap: 1.5em;
+
+
+}
+
+.foto {
+	border-radius: 50%;
+}
+
+/*nefunguje
+.tym {
+	gap: 1.5em;
+}
+*/
+
+
+@media screen and (min-width: 540px) {
+	.tym {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+
+	}
+	
+	.osoba {
+	/*flex: 50%;  spatne*/
+
+	flex: 1 1 45%;
+
+	}
+	
+}
+
+@media screen and (min-width: 940px) {
+	
+	.tym {
+		flex-wrap: nowrap;
+
+	}
+	/*display: flex;???* neni treba dopisovat, vse vyse uvedene funguje*/
+	.osoba {
+		
+		flex: 1 1 calc(100% / 5);
+
+	}
+
+}
+
