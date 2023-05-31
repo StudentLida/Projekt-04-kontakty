@@ -17,7 +17,8 @@ h1 {
 .osoba {
 	border: 1px solid lightgray;
 	border-radius: 3%;
-	padding: 15px;
+	margin: 7px;
+	padding: 10px;
 	gap: 2em;
 	box-shadow: 3px 1px 1px rgb(220, 215, 215);
 	text-align: center;
@@ -42,17 +43,22 @@ h1 {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 20px;
-
-	}
-	
+			}
 	.osoba {
-	/*flex: 50%;  spatne*/
-
-	flex: 1 1 45%;
-
+				/*flex: 50%;  spatne*/
+		display: flex;
+		flex: 1 1 45%;
+			}
+	.popis {
+		text-align: left;
+			}
+	.foto {
+		width: 80px;
 	}
+		}
 	
-}
+/*U media query min-width: 540px musíš ještě nastavit vnořený flexbox, tak aby fotka a text byly vedle sebe*/
+					
 
 @media screen and (min-width: 940px) {
 	
@@ -64,8 +70,10 @@ h1 {
 	.osoba {
 		
 		flex: 1 1 calc(100% / 5);
-
+		margin: 0;
 	}
+
+
 
 }
 
