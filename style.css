@@ -71,6 +71,7 @@ h1 {
 		
 		flex: 1 1 calc(100% / 5);
 		margin: 0;
+		align-items: center;
 	}
 
 
